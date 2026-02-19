@@ -11,6 +11,18 @@ public class PalindromeCheckerApp {
         System.out.println("      Version: " + appVersion);
         System.out.println("********************************************");
 
-        // UC2 Logic will be added here later...
+        String input = "madam";  // Hardcoded String
+        String reversed = "";
+
+        // Logic to reverse the string
+        StringBuilder sb = new StringBuilder(input);
+        reversed = sb.reverse().toString();
+
+        // Check if palindrome using if-else
+        if (input.equals(reversed)) {
+            System.out.println("Result: '" + input + "' is a Palindrome.");
+        } else {
+            System.out.println("Result: '" + input + "' is NOT a Palindrome.");
+        }
     }
 }
